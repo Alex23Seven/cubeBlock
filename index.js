@@ -17,7 +17,7 @@ Parser.convertXml = function convertXml(svg, callback) {
         callback(new Error("Your SVG is empty or invalid"));
         return;
     }
-
+    console.log("123")
     var elements = Parser.parseXmlNode(svg.svg);
     callback(null, elements);
 };
